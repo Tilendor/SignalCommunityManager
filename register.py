@@ -1,4 +1,4 @@
-#~!/usr/bin/oython
+#~!/usr/bin/python
 
 import os, sys, getopt
 from json import dumps, loads
