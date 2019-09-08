@@ -24,7 +24,7 @@ handlers = []
 
 
 def msgRcv(timestamp, source, groupID, message, attachments):
-    alias_present = re.search( config.aliases,message)
+    alias_present = re.search( config.cfg["aliases"],message)
 
     if groupID and not alias_present:
         print("Not Addressed to me")
@@ -32,7 +32,7 @@ def msgRcv(timestamp, source, groupID, message, attachments):
 
     if not groupID and alias_present:
         signal.sendMessage("Oh!  No need to be so formal between you and me.  My name is optional in these chats, just type the commands directly.  ;)",None,[source])
-        message = re.replace(config.aliases + "\s*","",message)
+        message = re.sub(config.cfg["aliases"] + "\s*","",message)
 
     message_handled = False
 

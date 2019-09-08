@@ -13,7 +13,7 @@ def main(argv):
    config = SecureJson.from_file('key')
 
    config.cfg['signal_phone_number'] = signal_phone_number
-   config.cfg['aliases'] = aliases
+   config.cfg['aliases'] = "^" + "|".join(aliases)
 
    print(config)
 
