@@ -14,7 +14,16 @@ signal = bus.get('org.asamk.Signal')
 config_file = 'config.json.enc'
 config = SecureJson.from_file('key', filepath=config_file)
 
-handlers = []
+class HelpHandler:
+
+    def process(self,message, source, groupID):
+        if not re.search("help",message):
+            return False
+        signal.sendMessage("Right now, the only command is help, which you already used",None,[source])
+        return True
+
+
+handlers = [HelpHandler()]
 
 
 
