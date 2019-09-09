@@ -11,6 +11,8 @@ class Help():
     self.help_text = "Here are the available commands I can handle.\n\n"
     for c in commands:
       self.help_text += "'%s' - %s\n" %(c.command, c.summary)
+    self.help_text += "\n You can get more detailed info by typing 'help <command>' ie 'help say.'":
+
     self.commands = commands
 
   def process(self,message,source,groupID):

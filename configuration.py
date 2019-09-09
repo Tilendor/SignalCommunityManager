@@ -13,7 +13,7 @@ class Configuration():
 
     self.signal_phone_number = self.secure_json.cfg['signal_phone_number']
     self.aliases_rgx = self.secure_json.cfg['aliases']
-    self.default_alias = self.aliases_rgx[1:].split('|')[0]
+    self.default_alias = self.aliases_rgx[2:].replace(")","").split('|')[0]
 
 
   @staticmethod
