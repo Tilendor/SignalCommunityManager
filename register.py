@@ -14,6 +14,7 @@ def main(argv):
 
    config.cfg['signal_phone_number'] = signal_phone_number
    config.cfg['aliases'] = "^" + "|".join(aliases)
+   config.cfg['groups'] = {}
 
    print(config)
 
