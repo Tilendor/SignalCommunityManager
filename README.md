@@ -30,7 +30,7 @@ Safety/Privacy:
 
 Group Browsing:
 1. Rename 'start topic' to 'start group' 
-2.  'set topic' -  Assigns a topic to a group separate from the name, to save typing (IE the Pysch Main (9/19) chat could have the topic 'main') (Need to figure out how to keep topics unique)
+2.  'set topic' -  Assigns a topic to a group separate from the name, to save typing (IE the Pyschology Main (9/19) chat could have the topic 'main') (Need to figure out how to keep topics unique)
 3. 'list groups' - to provide a user with all open groups that they could join.
 4. 'join group X' - to let a user join a group.
 5. 'set welcome X' - Allows a group to have a welcome message given upon joining (Right now can only do this with adds done through PB, need to work on underlying libraries to support this for manual invites)
